@@ -264,9 +264,9 @@ select {
 button,
 [type=button],
 [type=reset],
-[type=submit] {
+/* [type=submit] {
   -webkit-appearance: button;
-}
+} */
 
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -292,9 +292,9 @@ input[type=checkbox] {
 input[type=date],
 input[type=time],
 input[type=datetime-local],
-input[type=month] {
+/* input[type=month] {
   -webkit-appearance: listbox;
-}
+} */
 
 textarea {
   overflow: auto;
@@ -331,7 +331,7 @@ progress {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
 }
 
 [type=search]::-webkit-search-decoration {
@@ -2122,7 +2122,7 @@ textarea.form-control {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 .form-text {
@@ -2374,11 +2374,11 @@ textarea.form-control {
     margin-bottom: 0;
   }
   .form-inline .form-group {
-    display: flex;
-    flex: 0 0 auto;
-    flex-flow: row wrap;
-    align-items: center;
-    margin-bottom: 0;
+    display: flex !important;
+    flex: 0 0 auto !important;
+    flex-flow: row wrap !important;
+    align-items: center !important;
+    margin-bottom: 0 !important;
   }
   .form-inline .form-control {
     display: inline-block;
@@ -4535,13 +4535,13 @@ input[type=button].btn-block {
 }
 
 .breadcrumb {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  list-style: none;
-  background-color: #e9ecef;
-  border-radius: 0.25rem;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  padding: 0.75rem 1rem !important;
+  margin-bottom: 1rem !important;
+  list-style: none !important;
+  background-color: #e9ecef !important;
+  border-radius: 0.25rem !important;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -4560,7 +4560,7 @@ input[type=button].btn-block {
   text-decoration: none;
 }
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: #6c757d !important;
 }
 
 .pagination {

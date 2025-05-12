@@ -1,5 +1,6 @@
 package br.com.gabriel.clientes.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -21,5 +22,6 @@ public class ServicoPrestado {
    private BigDecimal valor;
 
    @Column
+   @JsonFormat(pattern = "dd/MM/yy")
     private LocalDate data;
 }

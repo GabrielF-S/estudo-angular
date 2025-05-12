@@ -14,7 +14,7 @@ public class InternacionalizacaoConfig {
     public MessageSource messageSource() { //configruação para difinir o arquivo de mensagem
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
         messageSource.setBasename("classpath:messages"); //define o nome do arquivo que contem as mensagens
-        messageSource.setDefaultEncoding("ISO-8859-1"); // define  o encode para acnetuação
+        messageSource.setDefaultEncoding("ISO-8859-1"); // define o encode para acnetuação
         messageSource.setDefaultLocale(Locale.getDefault()); //define a localização para a do notebook
         return messageSource;
 
