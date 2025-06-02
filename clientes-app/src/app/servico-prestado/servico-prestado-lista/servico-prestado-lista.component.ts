@@ -12,6 +12,7 @@ export class ServicoPrestadoListaComponent implements OnInit {
   mes: number;
   meses:number [];
   lista: ServicoPrestadoBusca[];
+  message: string;
 
   constructor(
     private service : ServicoPrestadoService,
@@ -26,6 +27,11 @@ export class ServicoPrestadoListaComponent implements OnInit {
   consultar(){
    this.service.buscar(this.nome, this.mes).subscribe(response=>{
     this.lista = response;
+    if(this.lista.length<=0){
+      this.message = "Nenhum registro encontrado."
+    }else{
+      this.message = null;
+    }
    })
   }
 

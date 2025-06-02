@@ -9,12 +9,14 @@ import {environment} from '../environments/environment'
 })
 export class ClientesService {
   apiURL : string = environment.apiURLBase + '/api/clientes';
+  
 
   constructor(private http: HttpClient) { 
     this.http.get
   }
   salvar(cliente: Cliente): Observable<Cliente> {
-    return this.http.post<Cliente>(`${this.apiURL}`, cliente);
+   
+    return this.http.post<Cliente>(`${this.apiURL}`, cliente,);
     
   }
   atualizar(cliente: Cliente, ): Observable<any> {
@@ -27,8 +29,7 @@ export class ClientesService {
   }
 
   getClientes(): Observable<Cliente[]>{
-
-    return this.http.get<Cliente[]>(this.apiURL);
+      return this.http.get<Cliente[]>(this.apiURL);
   }
 
   getClienteById(id: number) :  Observable<Cliente>{

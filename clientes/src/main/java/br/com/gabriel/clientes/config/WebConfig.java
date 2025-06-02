@@ -18,8 +18,8 @@ public class WebConfig {
         List<String> all = Arrays.asList("*");
 
         CorsConfiguration corsConfiguration = new CorsConfiguration();
-//        corsConfiguration.setAllowedOrigins(all);
-        corsConfiguration.setAllowedOriginPatterns(all);
+        corsConfiguration.setAllowedOrigins(all);
+//        corsConfiguration.setAllowedOriginPatterns(all);
         corsConfiguration.setAllowedHeaders(all);
         corsConfiguration.setAllowedMethods(all);
         corsConfiguration.setAllowCredentials(true);

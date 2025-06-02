@@ -6,7 +6,7 @@ import br.com.gabriel.clientes.model.repository.ClienteRepositoy;
 import br.com.gabriel.clientes.model.repository.ServicoPrestadoRepository;
 import br.com.gabriel.clientes.rest.dto.ServicoPrestadoDTO;
 import br.com.gabriel.clientes.util.BigDecialConverter;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
